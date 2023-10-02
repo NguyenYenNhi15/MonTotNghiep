@@ -1,0 +1,168 @@
+/* GG Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+}
+
+/* var */
+:root {
+    --main-color:#d90429 ;
+    --text-color: #020102;
+    --bg-color: #fff;
+}
+
+/* custom scroll bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background: var(--text-color);
+}
+section{
+    padding: 4rem;
+}
+img {
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+
+}header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.logo span{
+    color: var(--main-color);
+}
+.container{
+    max-width: 1086px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Nav */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.logo span{
+    color: var(--main-color);
+}
+
+
+
+/* Home */
+.new-account{
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(img/nen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.new-account-text{
+    padding-left: 130px;
+    }
+
+.new-account .login span{
+    color: var(--text-color);
+}
+
+.new-account .login .btnLog{
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.new-account .login .btnLog:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+/* Form */
+.new-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-new-account{
+    max-width: 400px;
+    background: rgba(0, 0, 0 , 0.8);
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+}
+.form-heading{
+    font-size: 25px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group{
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.form-group i{
+    color: #fff;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.form-input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #f5f5f5;
+    flex-grow: 1;
+}
+.form-input::placeholder{
+    color:var(--text-color);
+}
+#eye i{
+    padding-right: 0;
+    cursor: pointer;
+}
+ 
+.form-submit{
+    background: var(--main-color);       
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);   
+    border-radius: 0.5rem;
+    border: 1px solid var(--bg-color);
+    color: var(--bg-color);
+    width: 100%;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.form-submit:hover{
+    border: 1px solid #54a0ff;
+}
