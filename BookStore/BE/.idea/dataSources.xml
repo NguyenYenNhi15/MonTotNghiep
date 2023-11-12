@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="bookstore_8i5q@dpg-cl7qv376e7vc739vu3pg-a.singapore-postgres.render.com" uuid="554b6af3-759f-430b-bcae-be4314f4aa15">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dpg-cl7qv376e7vc739vu3pg-a.singapore-postgres.render.com:5432/bookstore_8i5q</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

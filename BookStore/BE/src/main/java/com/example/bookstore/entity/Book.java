@@ -37,8 +37,4 @@ public class Book {
 
     @Column(name = "type")
     private String type;
-
-    @JsonIgnore
-    @OneToMany(mappedBy = "book")
-    private List<CartIndex> cartIndexs;
 }
