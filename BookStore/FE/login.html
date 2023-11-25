@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
 </head>
 
 <body>
-     <!-- Navbar -->
+    <!-- Navbar -->
     <header>
         <!-- nav container -->
         <div class=" nav container">
@@ -19,17 +20,17 @@
         </div>
 
     </header>
-<!-- Form Log in -->
+    <!-- Form Log in -->
     <section class="login" id="login">
         <form action="" class="form-login">
             <h1 class="form-heading">Login</h1>
             <div class="form-group">
                 <i class="far fa-user"></i>
-                <input type="text" class="form-input" placeholder="Username">
+                <input id="username" type="text" class="form-input" placeholder="Username">
             </div>
             <div class="form-group">
                 <i class="fas fa-key"></i>
-                <input type="password" class="form-input" placeholder="Password">
+                <input id="password" type="password" class="form-input" placeholder="Password">
                 <div id="eye">
                     <i class="far fa-eye"></i>
                 </div>
@@ -37,18 +38,17 @@
 
             <div class="forgot-password ">
                 <!-- <span>Quen mat khau?</span> -->
-                   <a href="#" class="btnNewPass" > Forgot Password  <i class='bx bx-right-arrow-alt'></i></a>
-               </div> 
+                <a href="#" class="btnNewPass"> Forgot Password <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <input id="login-btn" type="button" value="Login" class="form-submit">
 
-            <input type="submit" value="Login" class="form-submit">   
-      
-            
             <div class="register ">
                 <span>Ban chua co tai khoan?</span>
-                <a href="#" class="btnReg" > Register <i class='bx bx-right-arrow-alt'></i></a>
+                <a href="/signup.html" class="btnReg"> Register <i class='bx bx-right-arrow-alt'></i></a>
             </div>
-              
-        </form>               
+
+        </form>
     </section>
 </body>
+
 </html>
