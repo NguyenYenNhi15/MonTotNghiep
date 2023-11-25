@@ -37,4 +37,7 @@ public class Book {
 
     @Column(name = "type")
     private String type;
+
+    @Column (name="isdelete")
+    private Long isDelete;
 }

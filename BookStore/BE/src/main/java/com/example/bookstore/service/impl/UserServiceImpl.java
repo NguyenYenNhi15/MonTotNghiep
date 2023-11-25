@@ -44,7 +44,8 @@ public class UserServiceImpl implements UserService {
                 userNew.setAddress(request.getAddress());
                 userNew.setUsername(request.getUsername());
                 userNew.setPassword(request.getPassword());
-                repo.save(userNew);
+                userNew.setId(request.getId());
+                repo.saveUser(userNew);
                 return new ResponseEntity<>(new BaseResponse(200, "Đăng ký thành công"), HttpStatus.OK);
             }
         }

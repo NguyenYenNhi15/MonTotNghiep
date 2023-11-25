@@ -14,12 +14,15 @@ import javax.persistence.*;
 public class User {
     @Id
     @Column(name = "id")
-    @SequenceGenerator(name = "user_seq",
-            sequenceName = "user_seq",
-            allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,
-            generator = "user_seq")
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @SequenceGenerator(name = "user_seq",
+//            sequenceName = "user_seq",
+//            allocationSize = 1)
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE,
+//            generator = "user_seq")
+
+
+    private Long id;
 
     @Column(name = "name")
     private String name;
@@ -38,4 +41,5 @@ public class User {
 
     @Column(name = "password")
     private String password;
+
 }

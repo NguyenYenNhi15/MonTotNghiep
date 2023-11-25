@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface BookRepository extends JpaRepository<Book, Long> {
-    @Query(value = "SELECT * FROM book b WHERE b.id = ?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM book b WHERE b.id = ?1 and b.isdelete =0", nativeQuery = true)
     List<Book> findAllById(Long id);
 
     @Query(value = "SELECT * FROM book b WHERE b.name = ?1", nativeQuery = true)

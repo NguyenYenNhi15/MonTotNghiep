@@ -29,7 +29,7 @@ public class BookController {
         return service.saveOrUpdateBook(request);
     }
 
-    @PostMapping("/delete-book")
+    @GetMapping("/delete-book")
     public ResponseEntity<BaseResponse> deleteBook(@RequestParam Long id) {
         return service.deleteBook(id);
     }

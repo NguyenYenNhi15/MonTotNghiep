@@ -55,6 +55,7 @@ public class BookServiceImpl implements BookService {
             book.setDescription(request.getDescription());
             book.setPrice(request.getPrice());
             book.setType(request.getType());
+            book.setIsDelete(0L);
             repo.save(book);
             return new ResponseEntity<>(new BaseResponse(200, "Thành công"), HttpStatus.OK);
         }
@@ -64,7 +65,9 @@ public class BookServiceImpl implements BookService {
     @Override
     public ResponseEntity<BaseResponse> deleteBook(Long id) {
         if (id != null) {
-            repo.deleteById(id);
+            Book book = repo.findBookById(id);
+            book.setIsDelete(1L);
+            repo.save(book);
             return new ResponseEntity<>(new BaseResponse(200, "Thành công"), HttpStatus.OK);
         }
         return new ResponseEntity<>(new BaseResponse(400, "Không tìm thấy sách"), HttpStatus.OK);
